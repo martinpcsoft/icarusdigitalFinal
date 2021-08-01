@@ -218,7 +218,7 @@ header label{
 }
 .hijo{
 	width: 30%;
-	height: 230px;
+	height: 220px;
 	margin: 10px;
 	border: .1rem solid rgba(0, 0, 0, .2);
 	box-shadow: 0 .5rem 1 rem rgba(0, 0, 0, .1);
@@ -250,7 +250,7 @@ header label{
 
 }
 .cliente{
-	font-size: 1.2rem;
+	font-size: 1.4rem;
   position: absolute;
 	text-align: center;
 	color:#fff;
@@ -276,6 +276,69 @@ header label{
 	top: 0;
 	transition: .3s;
 }
+/*formulario contacto*/
+.contacto{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-bottom: 4rem;
+
+}
+.contacto .image{
+	flex: 1 1 40rem;
+}
+.contacto .image img{
+	width: 100%;
+	padding: 2rem;
+}
+.contacto form{
+	flex: 1 1 40rem;
+	padding: 2rem 3rem;
+	border: 1rem solid rgba(0, 0, 0, .2);
+	box-shadow: 0.5rem 1 rem rgba(0, 0, 0, .1);
+	border-radius: .5rem;
+	background: white;
+}
+.contacto .heading{
+	text-align: center;
+	padding: 0;
+	padding-bottom: 2rem;
+}
+.contacto .form .inputcaja{
+	position: relative;
+}
+.contacto form .inputcaja input, .contacto form .inputcaja textarea{
+	width: 100%;
+	background: none;
+	color: #333;
+	margin: 1.5rem 0;
+	padding: 1.5rem 0;
+	font-size: 1.7rem;
+	border-bottom: .1rem solid rgba(0, 0, 0, .1);
+	text-transform: none;
+}
+.contacto form .inputcaja textarea{
+	resize: none;
+	height: 13rem;
+}
+.contacto form .inputcaja label{
+	position: absolute;
+	top: 1.7rem;
+	left: 0;
+	font-size: 1.7rem;
+	color: #666;
+	transition: .2s linear;
+}
+.contato form .inputcaja input:focus ~ label,
+.contato form .inputcaja input:valid ~ label,
+.contato form .inputcaja textarea:focus ~ label,
+.contato form .inputcaja textarea:valid ~ label{
+	top:-.5rem;
+	font-size: 1.5rem;
+	color: var(--limon);
+}
+
 @media(max-width: 1200px){
 	html{
 		font-size: 55%;
