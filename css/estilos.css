@@ -51,7 +51,7 @@ section{
 }
 .heading{
 	text-align: center;
-    color: black;
+  color: black;
 	font-size: 3.5rem;
 	text-transform: uppercase;
 	padding: 1rem;
@@ -223,6 +223,7 @@ header label{
 	border: .1rem solid rgba(0, 0, 0, .2);
 	box-shadow: 0 .5rem 1 rem rgba(0, 0, 0, .1);
 	position: relative;
+	overflow: hidden;
 }
 .hijo img{
 	width: 100%;
@@ -233,7 +234,7 @@ header label{
 	width: 100%;
 	height: 100%;
 	top: 0;
-	background: rgba(0143, 212, 255, .5);
+	background-color: rgba(190,180,9, 0.8);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -242,12 +243,39 @@ header label{
 }
 
 .efecto h3{
+	font-size: 3rem;
 	margin: 10px;
 	padding: 10px;
 	color: white;
 
 }
-
+.cliente{
+	font-size: 1.2rem;
+  position: absolute;
+	text-align: center;
+	color:#fff;
+	padding: 5px;
+  left: 0;
+	right: 0;
+	bottom: 0;
+	
+}
+.izquierda{
+	left: -100%;
+	transition: .3s;
+}
+.hijo:hover .izquierda{
+	left: 0;
+	transition: .3s;
+}
+.arriba{
+	top: -100%;
+	transition: .3s;
+}
+.hijo:hover .arriba{
+	top: 0;
+	transition: .3s;
+}
 @media(max-width: 1200px){
 	html{
 		font-size: 55%;
